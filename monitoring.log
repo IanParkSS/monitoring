@@ -1,0 +1,104 @@
+2023-05-22 11:00:18,148 - INFO - [2023-05-22 11:00:06] 프로그램이 실행 중 입니다.
+2023-05-22 12:00:13,100 - INFO - [2023-05-22 12:00:02] 프로그램이 실행 중 입니다.
+2023-05-22 13:00:12,256 - INFO - [2023-05-22 13:00:01] 프로그램이 실행 중 입니다.
+2023-05-22 13:45:10,611 - ERROR - [Errno 2] No such file or directory: 'title_list.txt'
+2023-05-22 13:45:10,613 - ERROR - Traceback (most recent call last):
+  File "C:\monitoring\monitoring.py", line 120, in ann_alarm
+    title_df = pd.read_csv('title_list.txt')
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1661, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\common.py", line 859, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'title_list.txt'
+
+2023-05-22 13:47:00,622 - ERROR - [Errno 2] No such file or directory: 'title_list.txt'
+2023-05-22 13:47:00,623 - ERROR - Traceback (most recent call last):
+  File "C:\monitoring\monitoring.py", line 120, in ann_alarm
+    title_df = pd.read_csv('title_list.txt')
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1661, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\common.py", line 859, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'title_list.txt'
+
+2023-05-22 13:47:48,149 - ERROR - No columns to parse from file
+2023-05-22 13:47:48,151 - ERROR - Traceback (most recent call last):
+  File "C:\monitoring\monitoring.py", line 118, in ann_alarm
+    title_df = pd.read_csv('title_list.txt')
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1679, in _make_engine
+    return mapping[engine](f, **self.options)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas\_libs\parsers.pyx", line 555, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+
+2023-05-22 13:50:05,030 - ERROR - No columns to parse from file
+2023-05-22 13:50:05,032 - ERROR - Traceback (most recent call last):
+  File "C:\monitoring\monitoring.py", line 118, in ann_alarm
+    title_df = pd.read_csv('title_list.txt')
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1679, in _make_engine
+    return mapping[engine](f, **self.options)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas\_libs\parsers.pyx", line 555, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+
+2023-05-22 13:50:10,991 - ERROR - No columns to parse from file
+2023-05-22 13:50:10,991 - ERROR - Traceback (most recent call last):
+  File "C:\monitoring\monitoring.py", line 118, in ann_alarm
+    title_df = pd.read_csv('title_list.txt')
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1679, in _make_engine
+    return mapping[engine](f, **self.options)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas\_libs\parsers.pyx", line 555, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+
+2023-05-22 13:52:47,942 - ERROR - No columns to parse from file
+2023-05-22 13:52:47,945 - ERROR - Traceback (most recent call last):
+  File "C:\monitoring\monitoring.py", line 118, in ann_alarm
+    title_df = pd.read_csv('title_list.txt')
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1679, in _make_engine
+    return mapping[engine](f, **self.options)
+  File "C:\Users\csw\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas\_libs\parsers.pyx", line 555, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+
+2023-05-22 14:00:12,600 - INFO - [2023-05-22 14:00:01] 프로그램이 실행 중 입니다.

@@ -1,0 +1,7 @@
+nhis_announcement.xlsx
+title_list.txt
+monitoring.log
+
+*.txt
+*.csv
+*.log
