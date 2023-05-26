@@ -7,7 +7,6 @@ import traceback
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from logging.handlers import RotatingFileHandler
-
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -124,7 +123,7 @@ def ann_alarm():
             reg_dt = df.iloc[i]['등록일']
             view_cnt = df.iloc[i]['조회수']
 
-            if reg_dt == now_dt and view_cnt < 3 and title not in list :
+            if reg_dt == now_dt and view_cnt < 20 and title not in list :
                 content = nowFm + '_new_ann_title : ' + title
                 if keyWord in title:
                     content =  nowFm +'_inspection_ann_title : ' + title
